@@ -95,6 +95,8 @@ img {
 <p>Now plug in the data of testing and use the confusionMatrix function to test my accuracy</p>
 <pre class="r"><code>  predictRF &lt;- predict(modFit, testingData, type = &quot;class&quot;)
   
+  <p>Here you can see the estimates for the various accuracy measures (average of 99.67%) and the sample error rate can be estimated to be around 0.33%</p> 
+  
   confusionMatrix(predictRF, testingData$classe)</code></pre>
 <pre><code>## Confusion Matrix and Statistics
 ## 
