@@ -82,7 +82,7 @@ img {
 <pre class="r"><code>  trainUrl &lt;- &quot;http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv&quot;
   testUrl &lt;- &quot;http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;
   trainingRaw &lt;- read.csv(url(trainUrl), na.strings=c(&quot;NA&quot;,&quot;#DIV/0!&quot;,&quot;&quot;))
-  testingRaw &lt;- read.csv(url(testUrl), na.strings=c(&quot;NA&quot;,&quot;#DIV/0!&quot;,&quot;&quot;))</code></pre>
+  testingRaw &lt;- read.csv(url(testUrl))</code></pre>
 <p>Split the data up into a training and testing set</p>
 <pre class="r"><code>  inTrain      &lt;- createDataPartition(y=trainingRaw$classe, p=0.80, list=F)
   training  &lt;- trainingRaw[inTrain,]
